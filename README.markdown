@@ -17,7 +17,7 @@
 - It is also necessary to enable rewrite module for apache.
 - Dump the database is in chat.sql
 - Set up a connection to the database in /chat/protected/config/main.php
-- Set up a connection to redis for node.js applications in chat-node / daemon.js
+- Set up a connection to redis for node.js applications in chat-node / app.js
 - Align the permissions for directories chat / and yii /, the web server can read and write files.
 
 ## Starting:
