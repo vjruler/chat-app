@@ -1,28 +1,28 @@
 # UWC. Back-end developer 3+
 
-<p>Для работы приложения необходимо установить:</p>
+<p>The application must set:</p>
 
 - Apache2+
 - MySQL 5.1+
 - PHP 5.3+
 - Redis 2.2+
 - node.js 0.6.14
-- Расширения для php:
+- Extensions php:
 * phpredis (https://github.com/nicolasff/phpredis)
 * PDO MySQL extension
 * php-openssl
 
-## Конфигурация:
-- Корень apache нужно установить на директорию chat/ и установить AllowOverride All.
-- Также необходимо включить модуль rewrite для apache.
-- Дамп базы данных находится в chat.sql
-- Настройка подключения к БД в /chat/protected/config/main.php
-- Настройка подключения к redis для node.js приложения в chat-node/daemon.js
-- Выставить права доступа для директорий chat/ и yii/, чтобы веб-сервер мог читать и записывать файлы.
+## configuration:
+- Apache root directory must be set to chat / and set AllowOverride All.
+- It is also necessary to enable rewrite module for apache.
+- Dump the database is in chat.sql
+- Set up a connection to the database in /chat/protected/config/main.php
+- Set up a connection to redis for node.js applications in chat-node / daemon.js
+- Align the permissions for directories chat / and yii /, the web server can read and write files.
 
-## Запуск:
-Для запуска приложения неоходимо запустить chat-node/daemon.js:
+## Starting:
+To run the application details please run chat-node / app.js:
 
-	node daemon.js
+node app.js
 
-После этого можно заходить на хост, который указан в настройках apache.
+You can then go to the host that is specified in the settings apache.
